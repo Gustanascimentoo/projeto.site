@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing Script" rel="stylesheet">
+    <style>
+        body {
+            background-image: url();
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: White;
+        }
+    </style>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h1 id="marcaPag">Ponto do Hardware</h1>
+  <nav class = "navegacao">
+    <ul class = "nav-lista">
+        <li class = "nav-lista-item"> 
+            <a class = "nav-link" href="index.html"> Home </a>
+        </li>
+        <li class = "nav-lista-item">
+            <a class = "nav-link" href="mapa.html">Mapa</a>
+        </li>
+        <li class = "nav-lista-item">
+            <a class = "nav-link" href="Cadastro.html">Cadastro</a>
+        </li>
+    </ul>
+</nav>
+    
+    <img id = "logo" src="comp.png" >
+
+   <center><div class="body">
+        <h3><b>Bem Vindos ao Ponto do Hardware!</b></h3>
+        <h3><b>O Melhor Cuidado aos Computadores</b></h3>
+        <div class="body">
+            <br><br><br>
+            <form class="formulario" method="post">
+                <h4>Recemos em nossa loja ou enviamos o técnico à domicilio</h4>
+                <h5>Preencha o formulário abaixo e inscreva-se:</h5></center>
+                <br><br>
+                <b>Dados Pessoais</b>
+                <div class="field">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">CPF:</label>
+                    <input type="email" id="CPF" name="CPF" placeholder="Digite seu CPF*" required>
+                </div>
+
+                <div>
+                    <b>Sexo:</b>
+                    <input id="sexoMasculino" type="radio" name="sexo" value="M">
+                    <label for="sexoMasculino">Masculino</label>
+
+                    <input id="sexoFeminino" type="radio" name="sexo" value="F">
+                    <label for="sexoFeminino">Feminino</label>
+
+                    <input id="sexoFeminino" type="radio" name="sexo" value="F">
+                    <label for="sexoFeminino">Outros</label>
+                </div>
+
+                <div class="field">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone*">
+                </div>
+
+                <div class="field">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+                </div>
+<br>
+                <br>
+                <div>
+                    <b>Endereço</b>
+                    <div class="field">
+                        <label for="nome">Rua:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o Nome da Rua*" required>
+                    </div>
+                    <div class="field">
+                        <label for="nome">Número:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o Número*" required>
+                    </div>
+                    <div class="field">
+                        <label for="nome">CEP:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o CEP*" required>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <b>Solicitação do Técnico</b>
+                    <div class="field">
+                        <label for="nome">Horario:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite um horario*" required>
+                    </div>
+                    <div class="field">
+                        <label for="nome">Dia:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o dia*" required>
+                    </div>
+
+                </div>
+                
+                <br>
+                <br>
+                <b>Qual Opção Gostaria de Contratar?</b>
+                <div>
+                    <input type="checkbox" id="Bolo de Churros" name="Bolo de Churros" checked>
+                    <label for="Bolo de Churros">Reparo/Quebrado</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="Sorvete de Churros" name="Sorvete de Churros">
+                    <label for="Sorvete de Churros">Manutenção Preventiva</label>
+                </div>
+<br>
+                <div class="field">
+                    <b><label for="">Foto do Produto:</label></b>
+                    <input type="file" name="foto" required>
+                </div>
+                <br>
+
+                <b><label for="Ingrediente">Qual a marca do produto à ser analisado</label></b>
+                <input list="Ingredientes">
+                <datalist id="Ingredientes">
+                    <option value="Dell">
+                    <option value="Positivo">
+                    <option value="Asus">
+                    <option value="Lenovo">
+                    <option value="Acer"></option>
+                    <option value="Toshiba"></option>
+                    <option value="HP"></option>
+                    <option value="Apple"></option>
+                    <option value="Outros">
+                </datalist>
+                <br>
+
+                <div>
+                    <b><label for="">Selecione a Zona de São Paulo:</label></b>
+                    <select required name="cidade" id="cidade">
+                        <option selected value="">Selecione</option>
+                        <option value="1">Zona Central de São Paulo</option>
+                        <option value="2">Zona Centro-Sul de São Paulo</option>
+                        <option value="3">Zona Leste de São Paulo</option>
+                        <option value="4">Zona Nordeste de São Paulo</option>
+                        <option value="4">Zona Noroeste de São Paulo</option>
+                        <option value="4">Zona Norte de São Paulo</option>
+                        <option value="4">Zona Oeste de São Paulo</option>
+                        <option value="4">Zona Sudeste de São Paulo</option>
+
+                    </select>
+                </div>
+                <br>
+
+                <div class="field radiobox">
+                    <b><span>Deseja Receber Nossas Novidades Via Aplicativo Whatsapp?</span></b>
+                    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                    <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+                </div>
+                <br>
+
+                <div class="field">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea name="mensagem" rows="5" cols="30" placeholder="Escreva sua mensagem*"
+                        required></textarea>
+                </div>
+                <br>
+
+                <input type="submit" name="acao" value="Enviar">
+            </form>
+<br><br><br>
+            <footer class="rodape">
+                <section class="rodape-secao">
+                  <h3> Contato</h3>
+                  <p>(11) 3003-1189 </p>
+                  <p>contato@pontodohardware.com</p>
+                </section>
+                <section class="rodape-secao">
+                  <h3>Endereço</h3>
+                  <p>Avenida das Nações Unidas, 18605</p>
+                  <p>Santo Amaro, São Paulo, SP</p>
+                </section>
+                <section class="rodape-secao">
+                  <h3>Funcionamento </h3>
+                  <p>Segunda-Feira a Sábado</p>
+                  <p>Horário: 09hs as 20hs</p>
+                </section><br> <br> <br><br>
+        <div>
+          <center>Autor: Gustavo Nascimento Gonçalves - RMG: 26418606 <br>
+            Universidade Cruzeiro do Sul - Curso: CST em Análise e Desenvolvimento de Sistemas <br>
+            Turma: 1K / 2021 - Período: Noturno  - Prof. orientador: Katia Milani Lara Bossi
+          </center>
+        </div>
+    
+              </footer>
+
+</body>
+
+</html>
